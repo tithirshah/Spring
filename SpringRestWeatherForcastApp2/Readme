@@ -13,9 +13,9 @@ Application runs on server port - 9001
 END Point URI : http://localhost:9001/api/weather/weekly/{country}/{city}
 e.g. http://localhost:9001/api/weather/weekly/INDIA/Ahmedabad
 
-I have used spring-boot to solve this case study. As using spring-boot configuration becomes easy.
+I have used spring-boot Rest to solve this case study. 
 WeatherApiController class acts as a rest controller. From there request goes to WeatherService which has a method to call weather forecast api.
-Weather class is POJO class.WeatherEntry class is to retrieve necessary parameters from api response. 
-WeatherForcasr is POJO which takes data from Weather Entry.
+Weather class is POJO.WeatherEntry class is used to retrieve necessary parameters from api response. 
+WeatherForcast is also POJO which takes data from Weather Entry.
 WeatherAppProperties.java is used to get weather api key from application.properties.
 ExceptionController and ErrorResponse acts as Exception handler classes.
