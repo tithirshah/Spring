@@ -22,7 +22,7 @@ public class ExceptionController {
 		
 	}
 	
-	@ExceptionHandler(Exception.class)
+@ExceptionHandler(Exception.class)
 	
 	public ResponseEntity<ErrorResponse> handleException(Exception e,HttpStatus status)
 	{
@@ -31,7 +31,6 @@ public class ExceptionController {
 		return new ResponseEntity<>(err,HttpStatus.BAD_REQUEST);
 		
 	}
-	
 	
 
 }
